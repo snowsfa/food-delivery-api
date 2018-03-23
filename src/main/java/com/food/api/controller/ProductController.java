@@ -5,8 +5,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.food.api.domain.Product;
 import com.food.api.exception.ProductNotFoundException;
+import com.food.api.model.Product;
 import com.food.api.service.ProductService;
 
 @RestController("/api/v1/Product")

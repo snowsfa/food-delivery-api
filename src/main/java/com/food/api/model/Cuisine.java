@@ -1,4 +1,4 @@
-package com.food.api.domain;
+package com.food.api.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

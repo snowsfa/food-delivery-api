@@ -5,9 +5,9 @@ import java.time.LocalDateTime;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.food.api.domain.Customer;
 import com.food.api.exception.CustomerAlreadyExistsException;
 import com.food.api.exception.CustomerNotFoundException;
+import com.food.api.model.Customer;
 import com.food.api.repository.CustomerRepository;
 
 @Service

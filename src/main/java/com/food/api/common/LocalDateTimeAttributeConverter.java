@@ -1,4 +1,4 @@
-package com.food.api.util;
+package com.food.api.common;
 
 import java.sql.Timestamp;
 import java.time.LocalDateTime;

@@ -3,10 +3,10 @@ package com.food.api.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.food.api.domain.Cuisine;
-import com.food.api.domain.Store;
 import com.food.api.exception.CuisineNotFoundException;
 import com.food.api.exception.StoreNotFoundException;
+import com.food.api.model.Cuisine;
+import com.food.api.model.Store;
 import com.food.api.repository.StoreRepository;
 
 @Service

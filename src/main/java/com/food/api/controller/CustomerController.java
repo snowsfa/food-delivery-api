@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.food.api.domain.Customer;
 import com.food.api.exception.CustomerAlreadyExistsException;
+import com.food.api.model.Customer;
 import com.food.api.service.CustomerService;
 
 @RestController("/api/v1/Customer")

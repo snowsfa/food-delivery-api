@@ -5,8 +5,8 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import com.food.api.domain.Customer;
-import com.food.api.domain.Order;
+import com.food.api.model.Customer;
+import com.food.api.model.Order;
 
 @Repository
 public interface OrderRepository extends JpaRepository<Order, Long> {

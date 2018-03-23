@@ -6,12 +6,12 @@ import java.time.LocalDateTime;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.food.api.domain.Customer;
-import com.food.api.domain.Order;
-import com.food.api.domain.OrderItem;
 import com.food.api.enums.OrderStatusEnum;
 import com.food.api.exception.CustomerNotFoundException;
 import com.food.api.exception.OrderNotFoundException;
+import com.food.api.model.Customer;
+import com.food.api.model.Order;
+import com.food.api.model.OrderItem;
 import com.food.api.repository.OrderRepository;
 
 @Service

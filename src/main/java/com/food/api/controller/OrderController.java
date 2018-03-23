@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.food.api.domain.Customer;
-import com.food.api.domain.Order;
 import com.food.api.exception.CustomerNotFoundException;
 import com.food.api.exception.OrderNotFoundException;
+import com.food.api.model.Customer;
+import com.food.api.model.Order;
 import com.food.api.service.CustomerService;
 import com.food.api.service.OrderService;
 

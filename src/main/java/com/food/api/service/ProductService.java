@@ -6,10 +6,10 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.food.api.domain.Product;
-import com.food.api.domain.Store;
 import com.food.api.exception.ProductNotFoundException;
 import com.food.api.exception.StoreNotFoundException;
+import com.food.api.model.Product;
+import com.food.api.model.Store;
 import com.food.api.repository.ProductRepository;
 
 @Service

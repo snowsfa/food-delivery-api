@@ -5,8 +5,8 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import com.food.api.domain.Cuisine;
-import com.food.api.domain.Store;
+import com.food.api.model.Cuisine;
+import com.food.api.model.Store;
 
 @Repository
 public interface StoreRepository extends JpaRepository<Store, Long> {

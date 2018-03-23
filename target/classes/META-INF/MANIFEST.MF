@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: SkipApi
+Implementation-Version: 1.0
+Built-By: fabio
+Implementation-Vendor-Id: com.foodathome
+Build-Jdk: 1.8.0_151
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/foodathome-api
+Created-By: Maven Integration for Eclipse
+

@@ -1,4 +1,4 @@
-package com.food.api.domain;
+package com.food.api.model;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
