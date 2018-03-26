@@ -3,6 +3,9 @@ package com.food.api.service;
 import java.time.LocalDateTime;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import com.food.api.exception.CustomerAlreadyExistsException;
@@ -10,8 +13,8 @@ import com.food.api.exception.CustomerNotFoundException;
 import com.food.api.model.Customer;
 import com.food.api.repository.CustomerRepository;
 
-@Service
-public class CustomerService {
+@Service("userDetailsService")
+public class CustomerService implements UserDetailsService {
 	
 	@Autowired
 	private CustomerRepository customerRepo;
@@ -34,11 +37,18 @@ public class CustomerService {
 	
 	public Customer addCustomer(Customer customer) throws CustomerAlreadyExistsException {
 		customerRepo
-			.findByEmail(customer.getEmail())
-			.orElseThrow(() -> new CustomerAlreadyExistsException(customer.getEmail()));
+				.findByEmail(customer.getEmail())
+				.orElseThrow(() -> new CustomerAlreadyExistsException(customer.getEmail()));
 
 		customer.setCreation(LocalDateTime.now());
 		return customerRepo.save(customer);
+	}
+
+	@Override
+	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+		return customerRepo
+				.findByEmail(username)
+				.orElseThrow(() -> new UsernameNotFoundException("No user found with username: " + username));
 	}
 
 }
